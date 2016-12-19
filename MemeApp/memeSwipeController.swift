@@ -21,15 +21,15 @@ class memeSwipeController: UIViewController {
     }
     
     @IBAction func swipeRight(_ swipe:UISwipeGestureRecognizer) {
-        // Swipe Left Animation
-        if(swipe.direction == .left) {
-            print("Swipe Left")
-            
-        // Swipe Right Animation
-        } else {
-            print("Swipe Right")
-        }
+        print("Swipe Right")
+        
     }
+    
+    @IBAction func swipeLeft(_ swipe:UISwipeGestureRecognizer) {
+        print("Swipe Left")
+        
+    }
+
     
 }
 

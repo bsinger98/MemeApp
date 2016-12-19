@@ -75,7 +75,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meme.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-1z-dxt">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meme.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-1z-dxt">
                                 <rect key="frame" x="57" y="77" width="260" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -92,6 +92,11 @@
                 <swipeGestureRecognizer direction="right" id="04B-YR-DFk">
                     <connections>
                         <action selector="swipeRight:" destination="Yzq-00-r5w" id="qlQ-Oj-UKo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Fmb-Ye-Enp">
+                    <connections>
+                        <action selector="swipeLeft:" destination="Yzq-00-r5w" id="Tju-th-2Mr"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
