@@ -50,8 +50,6 @@ class memeSwipeController: UIViewController {
         
         switch sender.state {
         case .began:
-            print("Your touch start position is \(location)")
-            print("Start location in image is \(boxLocation)")
             // 1
             animator.removeAllBehaviors()
             
@@ -69,8 +67,15 @@ class memeSwipeController: UIViewController {
             animator.addBehavior(attachmentBehavior)
             
         case .ended:
-            print("Your touch end position is \(location)")
-            print("End location in image is \(boxLocation)")
+            
+            // Check if anchor is passed left or right swipe zones
+            print(self.originalBounds.width/2);
+            if(location.x > self.originalBounds.width/2 + 180) {
+                print("swipe right")
+            } else if(location.x < self.originalBounds.width/2 - 180) {
+                print("swipe left")
+            }
+           
             resetDemo()
             
         default:
