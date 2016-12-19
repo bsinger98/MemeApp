@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,11 +84,26 @@
                                     <outletCollection property="gestureRecognizers" destination="Fmb-Ye-Enp" appends="YES" id="x10-8U-9AA"/>
                                 </connections>
                             </imageView>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beQ-id-k92">
+                                <rect key="frame" x="183" y="399" width="8" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34519495061560135" green="0.50801699751949125" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-8v-iUk">
+                                <rect key="frame" x="183" y="158" width="8" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.02694902451500969" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="A6z-JQ-F6e" appends="YES" id="udW-wR-jXM"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="blueSquare" destination="beQ-id-k92" id="rWr-uQ-HZF"/>
+                        <outlet property="greenSquare" destination="uFe-8v-iUk" id="eeJ-fP-Xu2"/>
                         <outlet property="memeImg" destination="WSG-1z-dxt" id="ECi-hO-qF5"/>
                         <outlet property="test" destination="WSG-1z-dxt" id="Ezn-jc-vGq"/>
                     </connections>
@@ -104,6 +119,11 @@
                         <action selector="swipeLeft:" destination="Yzq-00-r5w" id="Tju-th-2Mr"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="A6z-JQ-F6e">
+                    <connections>
+                        <action selector="handleAttachmentGestureWithSender:" destination="Yzq-00-r5w" id="Rdp-UC-79V"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="932" y="135.38230884557723"/>
         </scene>
