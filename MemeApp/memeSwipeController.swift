@@ -23,12 +23,28 @@ class memeSwipeController: UIViewController {
     }
     
     @IBAction func swipeRight(_ swipe:UISwipeGestureRecognizer) {
-        print("Swipe Right")
+        self.fadeRight()
         
     }
     
     @IBAction func swipeLeft(_ swipe:UISwipeGestureRecognizer) {
-        print("Swipe Left")
+        self.fadeLeft()
+        
+    }
+    
+    func fadeRight() {
+        UIView.animate(withDuration: 1, animations: {
+            self.memeImg.alpha = 0.0;
+            self.memeImg.frame.origin.x = 100;
+        })
+        
+    }
+    
+    func fadeLeft() {
+        UIView.animate(withDuration: 1.5, animations: {
+            self.memeImg.alpha = 0.0;
+            self.memeImg.frame.origin.y = -100;
+        })
         
     }
 
