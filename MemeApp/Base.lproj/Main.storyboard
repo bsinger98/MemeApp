@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -79,10 +79,6 @@
                                 <rect key="frame" x="57" y="77" width="260" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="04B-YR-DFk" appends="YES" id="S3l-fd-nRc"/>
-                                    <outletCollection property="gestureRecognizers" destination="Fmb-Ye-Enp" appends="YES" id="x10-8U-9AA"/>
-                                </connections>
                             </imageView>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beQ-id-k92">
                                 <rect key="frame" x="183" y="399" width="8" height="8"/>
@@ -108,16 +104,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOr-Z3-xr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="04B-YR-DFk">
-                    <connections>
-                        <action selector="swipeRight:" destination="Yzq-00-r5w" id="qlQ-Oj-UKo"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="Fmb-Ye-Enp">
-                    <connections>
-                        <action selector="swipeLeft:" destination="Yzq-00-r5w" id="Tju-th-2Mr"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="A6z-JQ-F6e">
                     <connections>
                         <action selector="handleAttachmentGestureWithSender:" destination="Yzq-00-r5w" id="Rdp-UC-79V"/>
