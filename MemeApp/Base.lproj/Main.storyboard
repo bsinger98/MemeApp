@@ -81,6 +81,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="04B-YR-DFk" appends="YES" id="S3l-fd-nRc"/>
+                                    <outletCollection property="gestureRecognizers" destination="Fmb-Ye-Enp" appends="YES" id="x10-8U-9AA"/>
                                 </connections>
                             </imageView>
                         </subviews>
