@@ -105,7 +105,6 @@
                         <outlet property="blueSquare" destination="beQ-id-k92" id="rWr-uQ-HZF"/>
                         <outlet property="greenSquare" destination="uFe-8v-iUk" id="eeJ-fP-Xu2"/>
                         <outlet property="memeImg" destination="WSG-1z-dxt" id="ECi-hO-qF5"/>
-                        <outlet property="test" destination="WSG-1z-dxt" id="Ezn-jc-vGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOr-Z3-xr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
