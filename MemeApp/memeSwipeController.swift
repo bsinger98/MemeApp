@@ -69,12 +69,13 @@ class memeSwipeController: UIViewController {
         case .ended:
             
             // Check if anchor is passed left or right swipe zones
-            print(self.originalBounds.width/2);
-            if(location.x > self.originalBounds.width/2 + 180) {
+            print(self.view.bounds.width/2)
+            if(location.x > self.view.bounds.width/2 + 105) {
                 print("swipe right")
-            } else if(location.x < self.originalBounds.width/2 - 180) {
+            } else if(location.x < self.view.bounds.width/2 - 105) {
                 print("swipe left")
             }
+            print(location.x)
            
             resetDemo()
             
