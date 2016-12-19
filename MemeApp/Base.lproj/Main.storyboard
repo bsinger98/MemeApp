@@ -37,6 +37,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-2n-v3J">
                                 <rect key="frame" x="281" y="376" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="Yzq-00-r5w" kind="show" id="e1H-Jd-s3Y"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3O8-Rx-yCr">
                                 <rect key="frame" x="156" y="300" width="289" height="30"/>
@@ -49,7 +52,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="136"/>
+            <point key="canvasLocation" x="168" y="136"/>
+        </scene>
+        <!--Meme Swipe Controller-->
+        <scene sceneID="Xv5-vT-gb0">
+            <objects>
+                <viewController id="Yzq-00-r5w" customClass="memeSwipeController" customModule="MemeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="070-UD-Lal"/>
+                        <viewControllerLayoutGuide type="bottom" id="rG7-dY-tlI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1F1-Zg-QPS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-1z-dxt">
+                                <rect key="frame" x="180" y="85" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="04B-YR-DFk" appends="YES" id="S3l-fd-nRc"/>
+                                    <outletCollection property="gestureRecognizers" destination="KfV-fn-BoN" appends="YES" id="c0l-zh-pDa"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOr-Z3-xr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="04B-YR-DFk">
+                    <connections>
+                        <action selector="swipeRight:" destination="Yzq-00-r5w" id="qlQ-Oj-UKo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="KfV-fn-BoN">
+                    <connections>
+                        <action selector="swipeLeft:" destination="Yzq-00-r5w" id="Ima-4s-Ifv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="910" y="136"/>
         </scene>
     </scenes>
 </document>
