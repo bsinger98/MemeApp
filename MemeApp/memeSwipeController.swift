@@ -20,14 +20,14 @@ class memeSwipeController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func swipeRight(swipe:UISwipeGestureRecognizer) {
+    @IBAction func swipeRight(_ swipe:UISwipeGestureRecognizer) {
         // Swipe Left Animation
-        if(swipe.direction == .Left) {
-        
+        if(swipe.direction == .left) {
+            print("Swipe Left")
             
         // Swipe Right Animation
         } else {
-            
+            print("Swipe Right")
         }
     }
     

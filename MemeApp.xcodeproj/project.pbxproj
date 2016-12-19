@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D39FA7B31E07681300560AE6 /* memeSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FA7B21E07681300560AE6 /* memeSwipeController.swift */; };
+		D39FA7B51E076B1A00560AE6 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D39FA7B41E076B1A00560AE6 /* meme.jpg */; };
 		D3B75EAF1E05E19C00BCC52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B75EAE1E05E19C00BCC52C /* AppDelegate.swift */; };
 		D3B75EB11E05E19C00BCC52C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B75EB01E05E19C00BCC52C /* ViewController.swift */; };
 		D3B75EB41E05E19C00BCC52C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B75EB21E05E19C00BCC52C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D39FA7B21E07681300560AE6 /* memeSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memeSwipeController.swift; sourceTree = "<group>"; };
+		D39FA7B41E076B1A00560AE6 /* meme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme.jpg; sourceTree = "<group>"; };
 		D3B75EAB1E05E19C00BCC52C /* MemeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B75EAE1E05E19C00BCC52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B75EB01E05E19C00BCC52C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D3B75EB51E05E19C00BCC52C /* Assets.xcassets */,
 				D3B75EB71E05E19C00BCC52C /* LaunchScreen.storyboard */,
 				D3B75EBA1E05E19C00BCC52C /* Info.plist */,
+				D39FA7B41E076B1A00560AE6 /* meme.jpg */,
 			);
 			path = MemeApp;
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					D3B75EAA1E05E19C00BCC52C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -128,6 +132,7 @@
 				D3B75EB91E05E19C00BCC52C /* LaunchScreen.storyboard in Resources */,
 				D3B75EB61E05E19C00BCC52C /* Assets.xcassets in Resources */,
 				D3B75EB41E05E19C00BCC52C /* Main.storyboard in Resources */,
+				D39FA7B51E076B1A00560AE6 /* meme.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bsinger.MemeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -268,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bsinger.MemeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

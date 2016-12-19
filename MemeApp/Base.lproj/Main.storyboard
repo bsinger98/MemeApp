@@ -66,8 +66,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-1z-dxt">
-                                <rect key="frame" x="180" y="85" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meme.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-1z-dxt">
+                                <rect key="frame" x="65" y="69" width="328" height="229"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="04B-YR-DFk" appends="YES" id="S3l-fd-nRc"/>
@@ -85,7 +85,10 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="910" y="136"/>
+            <point key="canvasLocation" x="932" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="meme.jpg" width="600" height="600"/>
+    </resources>
 </document>
