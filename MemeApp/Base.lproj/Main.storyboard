@@ -71,7 +71,6 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="04B-YR-DFk" appends="YES" id="S3l-fd-nRc"/>
-                                    <outletCollection property="gestureRecognizers" destination="KfV-fn-BoN" appends="YES" id="c0l-zh-pDa"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -83,11 +82,6 @@
                 <swipeGestureRecognizer direction="right" id="04B-YR-DFk">
                     <connections>
                         <action selector="swipeRight:" destination="Yzq-00-r5w" id="qlQ-Oj-UKo"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="KfV-fn-BoN">
-                    <connections>
-                        <action selector="swipeLeft:" destination="Yzq-00-r5w" id="Ima-4s-Ifv"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
