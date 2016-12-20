@@ -135,7 +135,7 @@
         <!--Upload-->
         <scene sceneID="b70-eh-3JW">
             <objects>
-                <viewController id="0gZ-kx-abo" sceneMemberID="viewController">
+                <viewController id="0gZ-kx-abo" customClass="UploadImageController" customModule="MemeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ia-0j-CTB"/>
                         <viewControllerLayoutGuide type="bottom" id="iNd-6q-ufd"/>
@@ -143,13 +143,52 @@
                     <view key="view" contentMode="scaleToFill" id="Gaz-Tf-QfS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Meme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-yM-ISa">
+                                <rect key="frame" x="100" y="20" width="174" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlh-qO-5u0">
+                                <rect key="frame" x="27" y="98" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwD-5o-d1v">
+                                <rect key="frame" x="162" y="521" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="0gZ-kx-abo" eventType="touchUpInside" id="WUI-fi-I2n"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1J-qm-9YS">
+                                <rect key="frame" x="55" y="127" width="264" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-l7-U2N">
+                                <rect key="frame" x="55" y="127" width="264" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="0gZ-kx-abo" eventType="touchUpInside" id="7Cw-Jn-siC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" id="o5C-9w-JZi"/>
+                    <connections>
+                        <outlet property="memeSelectImg" destination="n1J-qm-9YS" id="aVd-7b-33f"/>
+                        <outlet property="uploadButton" destination="WwD-5o-d1v" id="FDc-By-4dd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jo-eS-gW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="-59"/>
+            <point key="canvasLocation" x="1416.8" y="-59.820089955022496"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="exl-1j-d3z">
@@ -172,6 +211,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addImage.png" width="453" height="406"/>
         <image name="meme.jpg" width="600" height="600"/>
     </resources>
 </document>

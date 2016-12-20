@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D321B6F31E08C3CF00E44F41 /* addImage.svg in Resources */ = {isa = PBXBuildFile; fileRef = D321B6F21E08C3CF00E44F41 /* addImage.svg */; };
+		D321B6F51E08C41300E44F41 /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D321B6F41E08C41300E44F41 /* addImage.png */; };
 		D39FA7B31E07681300560AE6 /* memeSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FA7B21E07681300560AE6 /* memeSwipeController.swift */; };
 		D39FA7B51E076B1A00560AE6 /* meme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D39FA7B41E076B1A00560AE6 /* meme.jpg */; };
 		D3B75EAF1E05E19C00BCC52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B75EAE1E05E19C00BCC52C /* AppDelegate.swift */; };
@@ -14,9 +16,12 @@
 		D3B75EB41E05E19C00BCC52C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B75EB21E05E19C00BCC52C /* Main.storyboard */; };
 		D3B75EB61E05E19C00BCC52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B75EB51E05E19C00BCC52C /* Assets.xcassets */; };
 		D3B75EB91E05E19C00BCC52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B75EB71E05E19C00BCC52C /* LaunchScreen.storyboard */; };
+		D3C9C3341E08950300F35C6A /* UploadImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C9C3331E08950300F35C6A /* UploadImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D321B6F21E08C3CF00E44F41 /* addImage.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = addImage.svg; sourceTree = "<group>"; };
+		D321B6F41E08C41300E44F41 /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
 		D39FA7B21E07681300560AE6 /* memeSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memeSwipeController.swift; sourceTree = "<group>"; };
 		D39FA7B41E076B1A00560AE6 /* meme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme.jpg; sourceTree = "<group>"; };
 		D3B75EAB1E05E19C00BCC52C /* MemeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +31,7 @@
 		D3B75EB51E05E19C00BCC52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3B75EB81E05E19C00BCC52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3B75EBA1E05E19C00BCC52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C9C3331E08950300F35C6A /* UploadImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 			children = (
 				D3B75EAE1E05E19C00BCC52C /* AppDelegate.swift */,
 				D39FA7B21E07681300560AE6 /* memeSwipeController.swift */,
+				D3C9C3331E08950300F35C6A /* UploadImageController.swift */,
 				D3B75EB01E05E19C00BCC52C /* ViewController.swift */,
 				D3B75EB21E05E19C00BCC52C /* Main.storyboard */,
+				D321B6F41E08C41300E44F41 /* addImage.png */,
 				D3B75EB51E05E19C00BCC52C /* Assets.xcassets */,
+				D321B6F21E08C3CF00E44F41 /* addImage.svg */,
 				D3B75EB71E05E19C00BCC52C /* LaunchScreen.storyboard */,
 				D3B75EBA1E05E19C00BCC52C /* Info.plist */,
 				D39FA7B41E076B1A00560AE6 /* meme.jpg */,
@@ -133,6 +142,8 @@
 				D3B75EB61E05E19C00BCC52C /* Assets.xcassets in Resources */,
 				D3B75EB41E05E19C00BCC52C /* Main.storyboard in Resources */,
 				D39FA7B51E076B1A00560AE6 /* meme.jpg in Resources */,
+				D321B6F31E08C3CF00E44F41 /* addImage.svg in Resources */,
+				D321B6F51E08C41300E44F41 /* addImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +156,7 @@
 			files = (
 				D39FA7B31E07681300560AE6 /* memeSwipeController.swift in Sources */,
 				D3B75EB11E05E19C00BCC52C /* ViewController.swift in Sources */,
+				D3C9C3341E08950300F35C6A /* UploadImageController.swift in Sources */,
 				D3B75EAF1E05E19C00BCC52C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
