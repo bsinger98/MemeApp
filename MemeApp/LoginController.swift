@@ -14,10 +14,11 @@ class LoginController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     
-    @IBAction func login(_ sender: Any) {
-        print("hello");
-        makeSignInRequest(userEmail: emailField.text!, userPassword: passwordField.text!);
+    // Always return false, sign in request will segue screen if there is a success or failure
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        makeSignInRequest(userEmail: emailField.text!, userPassword: passwordField.text!, sender: sender);
         
+        return false;
     }
     
     override func viewDidLoad() {
@@ -30,7 +31,7 @@ class LoginController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func makeSignInRequest(userEmail:String, userPassword:String) {
+    func makeSignInRequest(userEmail:String, userPassword:String, sender:Any?) {
         let postBody = ["email": userEmail, "password": userPassword]
         let loginURL = URL(string: "https://www.memetinder.com/auth")!
         var request = URLRequest(url: loginURL)
@@ -38,10 +39,32 @@ class LoginController: UIViewController {
         request.httpBody = try? JSONSerialization.data(withJSONObject: postBody, options: [])
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-       Alamofire.request(request)
+        Alamofire.request(request)
         .responseJSON {response in
-            // do whatever you want here
-            print(response);
+            
+            if let result = response.result.value {
+                let JSON = result as! NSDictionary
+                
+                if JSON["error"] != nil {
+                    // TODO display error to user
+                    print(JSON["error"]!);
+                } else {
+                    
+                    // Save session token for later api usage
+                    let defaults = UserDefaults.standard;
+                    let sessionToken = JSON["sessionToken"] as! String
+                    defaults.setValue("sessionToken", forKey: sessionToken)
+                    defaults.synchronize()
+                    
+                    // Login good, segue to next screen
+                    self.performSegue(withIdentifier: "loginSegue", sender: sender);
+                }
+                
+                
+            } else {
+                // TODO display error: trouble connecting to server
+            }
+            
         }
     }
 
