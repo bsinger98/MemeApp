@@ -32,6 +32,7 @@ class LoginController: UIViewController {
     }
     
     func makeSignInRequest(userEmail:String, userPassword:String, sender:Any?) {
+        // Create HTTPS request with login info
         let postBody = ["email": userEmail, "password": userPassword]
         let loginURL = URL(string: "https://www.memetinder.com/auth")!
         var request = URLRequest(url: loginURL)
@@ -53,7 +54,7 @@ class LoginController: UIViewController {
                     // Save session token for later api usage
                     let defaults = UserDefaults.standard;
                     let sessionToken = JSON["sessionToken"] as! String
-                    defaults.setValue("sessionToken", forKey: sessionToken)
+                    defaults.setValue(sessionToken, forKey: "sessionToken")
                     defaults.synchronize()
                     
                     // Login good, segue to next screen

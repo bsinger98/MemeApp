@@ -50,6 +50,9 @@ class UploadImageController: UIViewController, UIImagePickerControllerDelegate, 
             
             // Allow user to upload
             uploadButton.isEnabled = true;
+            
+            // TODO: upload image using multipart HTTPS POST
+            // API supports image upload
         }
         
         dismiss(animated: true, completion: nil)
