@@ -66,6 +66,8 @@ class memeSwipeController: UIViewController {
                         let imageDat = imageArray[0] as! [String: Any]
                         let imageUrl = URL(string: imageDat["url"] as! String)
                         
+                        self.currentImageId = String(describing: imageDat["id"])
+                        
                         self.setMemeImageFromUrl(imageUrl: imageUrl!, sessionToken: sessionToken)
                     }
                     
