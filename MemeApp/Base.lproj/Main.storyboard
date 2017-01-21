@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,45 +22,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-kn-yIu">
-                                <rect key="frame" x="43" y="113" width="289" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-kn-yIu">
+                                <rect key="frame" x="43" y="284" width="289" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-vb-gVf">
-                                <rect key="frame" x="43" y="84" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-vb-gVf">
+                                <rect key="frame" x="43" y="255" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-3c-xU2">
-                                <rect key="frame" x="43" y="185" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-3c-xU2">
+                                <rect key="frame" x="43" y="356" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3O8-Rx-yCr">
-                                <rect key="frame" x="43" y="214" width="289" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3O8-Rx-yCr">
+                                <rect key="frame" x="43" y="385" width="289" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-2n-v3J">
-                                <rect key="frame" x="168" y="278" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-2n-v3J">
+                                <rect key="frame" x="168" y="454" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <segue destination="Ixi-F8-l1L" kind="show" identifier="loginSegue" id="k2k-Oo-y2m"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meme Swipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e6-9v-A6f">
+                                <rect key="frame" x="43" y="20" width="288" height="99"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="AAn-Xr-fXh">
+                                <rect key="frame" x="177" y="459" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.38862350583076477" green="0.32101115584373474" blue="0.51049178838729858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HhX-kn-yIu" firstAttribute="top" secondItem="9e6-9v-A6f" secondAttribute="bottom" constant="165" id="0Sz-Ze-Kjc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9e6-9v-A6f" secondAttribute="bottom" constant="548" id="3jb-7I-XFb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HhX-kn-yIu" secondAttribute="trailing" constant="27" id="7SC-nE-8J7"/>
+                            <constraint firstItem="EYb-2n-v3J" firstAttribute="top" secondItem="9e6-9v-A6f" secondAttribute="bottom" constant="335" id="Bmf-U9-6Ed"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3O8-Rx-yCr" secondAttribute="trailing" constant="27" id="EEr-j8-RFz"/>
+                            <constraint firstItem="EYb-2n-v3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gu6-SL-oJl"/>
+                            <constraint firstItem="3O8-Rx-yCr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="ITH-Ah-lzp"/>
+                            <constraint firstItem="HhX-kn-yIu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="IxQ-xk-8sE"/>
+                            <constraint firstItem="HhX-kn-yIu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKy-uZ-Z1h"/>
+                            <constraint firstItem="HhX-kn-yIu" firstAttribute="top" secondItem="IQj-vb-gVf" secondAttribute="bottom" constant="8" id="Sxu-df-Ptc"/>
+                            <constraint firstItem="IQj-vb-gVf" firstAttribute="leading" secondItem="HhX-kn-yIu" secondAttribute="leading" id="UUt-JN-xt6"/>
+                            <constraint firstItem="3O8-Rx-yCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4b-ZM-9Cv"/>
+                            <constraint firstItem="3O8-Rx-yCr" firstAttribute="top" secondItem="Ifm-3c-xU2" secondAttribute="bottom" constant="8" id="gok-2a-Lil"/>
+                            <constraint firstItem="Ifm-3c-xU2" firstAttribute="leading" secondItem="3O8-Rx-yCr" secondAttribute="leading" id="h8P-e2-Y8h"/>
+                            <constraint firstItem="9e6-9v-A6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pzD-mB-3sQ"/>
+                            <constraint firstItem="3O8-Rx-yCr" firstAttribute="top" secondItem="HhX-kn-yIu" secondAttribute="bottom" constant="71" id="q5u-i4-2Px"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="HhX-kn-yIu" id="bah-Ql-ZbF"/>
+                        <outlet property="loadingIcon" destination="AAn-Xr-fXh" id="0cF-cE-cZV"/>
+                        <outlet property="loginButton" destination="EYb-2n-v3J" id="Tba-r4-ALE"/>
                         <outlet property="passwordField" destination="3O8-Rx-yCr" id="PlO-kz-J0w"/>
                     </connections>
                 </viewController>
@@ -216,6 +243,6 @@
     </scenes>
     <resources>
         <image name="addImage.png" width="453" height="406"/>
-        <image name="meme.jpg" width="600" height="600"/>
+        <image name="meme.jpg" width="453" height="406"/>
     </resources>
 </document>

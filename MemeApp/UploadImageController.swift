@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class UploadImageController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
     let imagePicker = UIImagePickerController()
@@ -15,8 +16,11 @@ class UploadImageController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var uploadButton: UIButton!
     
     @IBAction func uploadImage(_ sender: Any) {
+        /* let imageData = UIPNGRepresentation(memeSelectImg.image)!
         
-        
+        Alamofire.upload(imageData, to: "https://memetinder/upload").responseJSON { response in
+            debugPrint(response)
+        } */
     }
     
     @IBAction func selectImage(_ sender: Any) {
@@ -51,8 +55,6 @@ class UploadImageController: UIViewController, UIImagePickerControllerDelegate, 
             // Allow user to upload
             uploadButton.isEnabled = true;
             
-            // TODO: upload image using multipart HTTPS POST
-            // API supports image upload
         }
         
         dismiss(animated: true, completion: nil)

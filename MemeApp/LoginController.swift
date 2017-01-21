@@ -13,6 +13,8 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loadingIcon: UIActivityIndicatorView!
     
     // Always return false, sign in request will segue screen if there is a success or failure
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -23,7 +25,20 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loadingIcon.isHidden = true;
+        // Set Background Gradient
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        let color1 = UIColor(red:0.38, green:0.92, blue:0.49, alpha:1.0).cgColor
+        let color2 = UIColor(red:0.81, green:0.96, blue:0.84, alpha:1.0).cgColor
+        gradient.colors = [color1, color2]
+        
+        // Obsscure password field
+        passwordField.isSecureTextEntry = true
+        
+        view.layer.insertSublayer(gradient, at: 0)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +47,11 @@ class LoginController: UIViewController {
     }
     
     func makeSignInRequest(userEmail:String, userPassword:String, sender:Any?) {
+        // Show Loading
+        loginButton.isHidden = true
+        loadingIcon.isHidden = false
+        loadingIcon.startAnimating()
+        
         // Create HTTPS request with login info
         let postBody = ["email": userEmail, "password": userPassword]
         let loginURL = URL(string: "https://www.memetinder.com/auth")!
